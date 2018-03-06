@@ -1,0 +1,130 @@
+CSS：Cascading Style Sheet 层叠样式单
+4种引用方式：
+内联样式：内联到html元素上 控制一个html标签
+内部样式定义：通过在html文档头定义样式单 css控制一份html文档
+链接外部样式文件：将css文件与html文档分离 使用需引用 css可被多份html使用
+导入外部样式文件：与第三种类似 只是使用@import关键字
+
+CSS选择器（Selector）：
+Selector{
+键值对
+}
+标记选择器
+E{
+}
+E：element 有效地HTML标签
+类选择器
+[E].classValue{
+}
+ClassValue:类名
+一个标签使用多个类选择器 则效果叠加
+ID选择器
+[E]#idValue
+{
+}
+idValue:id名
+
+选择器组合
+Selector1,Selector2,Selector3{
+}
+
+Selector.classValue,#idValue
+{
+}
+
+选择器嵌套
+Selector1 Selector2{
+}
+使用空格而非逗号
+Selector1里面的Selector2样式表
+
+CSS字体和文本相关属性：
+字体属性
+font-family:字体（可多个）
+font-size:字体大小 大小 像素 百分比
+font-style:字体样式啊normal italic oblique
+font-weight:字体粗细 normal bold 自定义
+文本属性
+Color：文本颜色
+Letter-space 字符间距
+Line-height 行高
+Text-align 文本对齐方式：left right center
+Text-decoration overline上划线 underline下划线 line-through
+Text-indent 文本首行缩进
+Text-transform 控制文本大小写 uppercase lowercase capitalize
+Word-space 单词间距
+
+CSS边框属性：
+Border 所有边框属性
+Border-width 设置四条边框的宽度
+Border-style 设置四条边框的样式、
+Boeder-color 设置四条边框的颜色
+Border-left(right)-(color style width)
+设置左右边框的属性
+Border: 5px double #FF00FF;将border的属性合并来写
+Background 背景所有属性
+Background-attachment 设置被禁图是否随页面滚动 fixed scroll
+Background-color 设置背景色
+Background-image 设置背景图 url one
+Background-position 设置背景图开始位置top left或具体像素的位置
+Background-repeat 设置如何重复背景图 repeat\repeat-x\repeat-y\no-repeat
+Background和border一样支持组合写
+
+CSS列表属性
+List-style 在一个声明中设置所有属性
+List-style-image 将图像设置为标记 url
+List-style-position 列表项的标记放置位置 outside inside 
+List-style-type 与list-style-image不能同时使用 主要有disc circle square decimal decimal-leading-zero lower-roman upper-roman lower-geek lower-latin upper-latin armenian georgian none
+
+CSS表格属性
+Border-collaspe设置表格边框是否合并为单一的边框
+Border-spacing 设置分隔单元格边框的距离 与border-collaspe不能同时使用
+Caption-side 设置表格标题位置
+Empty-cell 设置是否显示表格中的空单元格
+
+
+盒子模型
+CSS定位系统：
+Float ：浮动定位 left right top bottom清除浮动定位影响Clear:left right both
+
+Position：absolute 绝对定位 相对于页面而言 relative相对于父块定位于
+z-index:当有position时 该值决定zorder
+
+CSS排版观念：
+首先将页面整体上进行div分块 通过各个块进行css定位 最后在这个块中添加相应内容
+优点：页面更新容易，甚至是页面的拓扑结构
+
+JS：
+JS创建对象的三种方式
+1：JSON（JavaScript Object Notation）：一种轻量级的数据交换格式。
+Object={属性名1：属性值1........}
+2.var obj=new Object();
+Obj可动态添加方法和变量
+
+BOM模型：
+BOM (Browser Object Model):浏览器对象模型 目前未被标准化
+顶层对象Window
+属性：document：文档对象，该窗口装载的html文档
+	  Location：文档的html
+	  Navigtor：返回当前页面的浏览器信息
+	  Screen：返回浏览器屏幕对象
+	  History：返回当前窗口浏览历史
+方法：alert：消息框、confirm：确认对话框、peompt：输入对话框、close：关闭窗口、moveBy，moveTo：移动窗口、resizeBy，resizeTo：重设窗口大小、scroolBy，scroolTo：滚动html、open：打开一个新的窗口加载新网址、setInterval，clearInterval设置删除定时器。
+
+Window.histoy:back：后退到上一个浏览的页面forward：前进到下一个浏览页面go（intVal）前进后退多少页面。
+
+Window.location:hostname:文档所在地址的主机名 href：文档所在地址的URL地址 host：文档所在地址的主机地址 port：文档所在地址的服务端口 pathname：文档所在地址的文件地址 protocol：装载该文档所使用的协议
+Window.screen:availHeight(Width):窗口可以使用的屏幕高度（宽度） colorDepth：用户浏览器所表示的颜色位数（32/24）
+
+Window.navigtor:appCodeNam：浏览器代码名的字符串表示  appName：官方浏览器的字符串表示 appVersion：浏览器版本信息的字符串表示 platform：浏览器所在计算机平台的字符串表示 userAgent：用户代理头的字符串表示 cookieEnable：如果启用cookie返回true
+
+DOM（Document Object Model）：文档对象模型，网页加载时，将结构化文档转化成内存中的对象树。
+DOM的三种节点：
+元素节点：HTML标签。
+文本节点：包含在标签内的文本
+属性节点：标签的属性
+
+DOM访问HTML元素的方式：
+根据ID：getElemetByID
+根据节点关系：parentNode（返回父节点） previousSibling（前一个兄弟节点）nextSibling（后一个兄弟节点） childNodes（返回所有子节点）firstChild（返回第一个子节点）lastChild（最后一个子节点）getElementByTagName（Name）返回所有具有标记名的子节点。
+

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="HuilongWang">
+  <meta name="Keywords" content="王慧龙">
+  <meta name="Description" content="王慧龙CSS+DIV第一个实战">
+
+  <title>XX 旅游网</title>
+  <link href="tour.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+ <!-- 整体外层容器-->
+	<div id="container">
+	<!--Banner 条-->
+		<div id="banner">
+			<img src="images\banner.jpg" alt="Banner" width="100%" height="100%">
+		</div>
+		<!--全局导航条-->
+		<div id="globallink">
+			<ul>
+				<li><a href="#">我度</a></li>
+				<li><a href="#">我浪</a></li>
+				<li><a href="#">我讯</a></li>
+				<li><a href="#">我易</a></li>
+				<li><a href="#">我狐</a></li>
+			</ul>
+		</div>
+		<!--左侧栏-->
+		<div id="left">
+			<div id="weather">
+				<h3><span>天气查询</span></h3>
+				<ul>
+					<li>菏泽雷阵雨哈哈啊哈</li>
+					<li>菏泽雷阵雨哈哈哈嗝</li>
+					<li>菏泽雷阵雨哈哈哈噗</li>
+					<li>淄博雷阵雨哈哈哈哈</li>
+					<li>北京雷电雨哈哈啊嗝</li>
+				</ul>
+			<div>
+			<div id="today">
+				<h3><span>今日推荐</span></h3>
+				<ul>
+					<li><a href="#"><img src="images/1.png" alt="图片"></a></li>
+					<li><a href="#">哈哈哈哈</a></li>
+					<li><a href="#"><img src="images/2.png" alt="图片"></a></li>
+					<li><a href="#">红红火火</a></li>
+					<li><a href="#"><img src="images/3.png" alt="图片"></a></li>
+					<li><a href="#">嘻嘻嘻嘻</a></li>
+
+
+				</ul>
+			</div>
+		</div>
+		<!--中间栏-->
+		<div id="middle">
+			middle
+		</div>
+		<!--右侧栏-->
+		<div id="right">
+			right
+		</div>
+		
+		<!--脚注栏-->
+		<div id="footter">
+			footter
+		</div>
+
+
+	</div>
+  
+ </body>
+</html>

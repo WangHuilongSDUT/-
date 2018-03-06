@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	.one{font-size:18px;
+		font-family:Arial,华文行楷;
+		font-style:italic
+		};
+	.one b{
+		color:red;
+		font-weight:20;
+		font-size:0.5em;
+	}
+	.two
+	{
+		font-size:20px;
+		line-height:100px;
+		color:red;
+		letter-spacing:10px;
+		word-spacing:100px;
+		text-transform:uppercase;
+	}
+	#three {
+	width:200px;
+	height:300px;
+	border-left:2px red dashed;
+	}
+
+	#four{
+		list-style-position:url(background.png) inside ;
+	}
+	#five{
+		list-style:none;
+	}
+	#five li
+	{
+		background-image:url(background.png);
+		background-repeat:no-repeat;
+		width:200px;
+		height:30px;
+		//border:1px solid red;
+		padding-left:40px;
+	}
+	#tb{
+	width:50%;
+	height:100px;
+	font-family:华文行楷;
+	border-collapse:collapse;
+	border-spacing:20px;
+	caption-side:bottom;
+	empty-cells:hide;
+	}
+	#tb tr td{
+		border:1px solid red;
+	}
+	#navigation{
+		width:200px;
+		font-family:新宋体;
+
+	}
+	#navigation ul{
+		list-style-type:none;
+		border:2px;
+
+	}
+	#navigation ul li
+	{
+		border:1px solid red;
+	}
+	#navigation ul li a
+	{
+		text-decoration:none;
+		display:block;
+		width:500px;
+		height:30px;
+	}
+	#navigation ul li a:link,#navigation ul li a:visited{
+		background-color:black;
+		color:yellow;
+	}
+	#navigation ul li a:hover
+	{
+		background-color:orange;
+		color:blue;
+	}
+  </style>
+ </head>
+ <body>
+<div id="navigation">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="http:\\www.baidu.com">baidu</a></li>
+		<li><a href="#">None</a></li>
+		<li><a href="#">My Pet</a></li>
+		<li><a href="#">Contact Me</a></li>
+	</ul>
+
+</div >
+
+  <p class="one"> 我的名<b>字</b>叫Long</p>
+  <p class = "two"> my name is rose,eighteen years old</p>
+  <p id="three">带边框得到p标签</p>
+  <h3>兴趣爱好</h3>
+  <ul id="four">
+	<li>足球</li>
+	<li>篮球</li>
+	<li>网球</li>
+  </ul>
+    <h3>兴趣爱好222</h3>
+  <ul id="five">
+	<li>足球</li>
+	<li>篮球</li>
+	<li>网球</li>
+  </ul>
+  <table id=tb>
+	<caption>我的表哥</caption>
+	<tr>
+	<td>单元格1</td>
+	<td>单元格2</td>
+	<td>单元格3</td>
+	</tr>
+	<tr>
+	<td>单元格A</td>
+	<td>单元格B</td>
+	</tr>
+  </table>
+ </body>
+</html>

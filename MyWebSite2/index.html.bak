@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="王慧龙">
+  <meta name="Keywords" content="王慧龙的第一个网站">
+  <meta name="Description" content="欢迎访问">
+  <style type="text/css">
+	.main
+	{
+		font-size:100px;
+		color:red;
+		font-weight:bold;
+		text-align:center;
+
+	}
+	.content
+	{
+
+	}
+	.footer
+	{
+
+	}
+  </style>
+  <title>欢迎！</title>
+ </head>
+ <body>
+<div>
+  <p class="main">欢迎访问，来首歌儿把！</p>
+ </div>
+ <div class="content">
+ <em >
+ </em>
+ <div>
+ <div class="footer">
+ <div>
+ </body>
+</html>

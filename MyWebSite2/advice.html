@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>请为我一些建议...</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <style type="text/css">
+        .musicplayer
+        {
+            display:block;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+  href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+  以获得更好的体验！</p>
+<![endif]-->
+
+<!-- 页面内容 开发时删除 -->
+
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">
+                提示
+                <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+            </div>
+            <div class="am-modal-bd">
+                这个功能还没有实现
+            </div>
+        </div>
+    </div>
+    <header class="am-topbar">
+        <h1 class="am-topbar-brand">SDUT_WSL</h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="picture.html">图片</a></li>
+                <li class="am-active"><a href="#">提点儿建议</a></li>
+                <li><a href="https://li-fish.github.io" target="_blank">某大神的博客</a></li>
+            </ul>
+            <div class="am-topbar-right">
+                <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#doc-modal-1'}">登录</button>
+            </div>
+        </div>
+    </header>
+
+<form class="am-form" method="post" action="thanks.php">
+<div class="am-form-group">
+<h1> 给我一些建议：</h1>
+</div>
+  <fieldset>
+    <div class="am-form-group">
+      <label for="Advice_Content">提议:</label>
+      <textarea class="" rows="5" id="Advice_Content" name="advice_content"></textarea>
+    </div>
+
+   <div class="am-form-group">
+      <label for="Advice_Name">你的名字：</label>
+      <input type="text" name="advice_name" id="Advice_Name"/>
+    </div>
+
+    <div class="am-form-group">
+      <label for="Advice_Contact">你的联系方式：</label>
+      <input type="text" name="advice_contact" id="Advice_Contact"/>
+    </div>
+
+
+    <p><button type="submit" class="am-btn am-btn-default">提交</button></p>
+  </fieldset>
+</form>
+    <p class="musicplayer">我的QQ号：212917140</p>
+    <embed class="musicplayer" src="music/thestar.mp3" />
+
+    <footer data-am-widget="footer" class="am-footer am-footer-default" data-am-footer="{  }">
+        <div class="am-footer-miscs ">
+            <p>
+                由 <a href="http://www.amazeui.org/" target="_blank" class="">Amaze UI</a>
+                提供技术支持
+            </p>
+            <p>CopyRight©2017  <a href="mailto:wanghuilongsd@163.com">SDUT_WSL</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+<!-- 以上页面内容 开发时删除 -->
+
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+
+</body>
+</html>
